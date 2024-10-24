@@ -10,7 +10,7 @@ export default factories.createCoreController(
     async findOne(ctx) {
       const { id: documentId } = ctx.params;
 
-      const pessoa = await strapi.documents("api::pessoa.pessoa").findMany({
+      const pessoa = await strapi.documents("api::pessoa.pessoa").findOne({
         documentId: documentId,
         populate: ["cidade", "estado"],
       });
