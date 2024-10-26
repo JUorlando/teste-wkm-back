@@ -61,7 +61,10 @@ Para acessar o painel administrativo do Strapi, use as seguintes credenciais:
 - **Email:** admin@teste.com
 - **Senha:** Senha123
 
+
 Acesse [http://localhost:1337/admin](http://localhost:1337/admin) e faça login com as credenciais acima.
+
+**IMPORTANTE** É necessário dar permissões para os usuários públicos na sua aplicação strapi assim que acessar o admin, você deverá ir em Settings> USERS E PERMISSIONS PLUGIN> ROLES> PUBLIC> PERMISSIONS> Você irá encontrar os modelos da aplicação (Cidade, Estado e Pessoa) e você poderá liberar as permissões para acessar todas as rotas de CRUD desses modelos. Após isso, pode usar o Content Manager para adicionar os dados a aplicação.
 
 ## 💻 Rodando a Aplicação Localmente
 
