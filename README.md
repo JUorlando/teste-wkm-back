@@ -67,6 +67,8 @@ Acesse [http://localhost:1337/admin](http://localhost:1337/admin) e faça login 
 
 Para rodar a aplicação localmente na sua máquina, siga os passos abaixo:
 
+OBS: Comente os campos de conexão com database no .env para rodar a aplicação de forma local, pois esse arquivo está configurado para rodar com docker-compose.
+
 ### Requisitos
 
 - Node.js (versão recomendada: 18.20.3)
