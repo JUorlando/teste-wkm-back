@@ -152,10 +152,11 @@ As rotas para acessar os recursos são as seguintes:
 - **Cidades**: `http://localhost:1337/api/cidades`
 - **Pessoas**: `http://localhost:1337/api/pessoas`
 
-### **Métodos de Requisição**
+### ** Exemplos de Métodos de Requisição**
 
 - **GET**: Para listar todos os registros
 - **POST**: Para criar novos registros
+- **GET**: `http://localhost:1337/api/estados/:id` (o id se trata do campo `documentId` na response) - Para listar registros específicos
 - **PUT**: `http://localhost:1337/api/estados/:id` (o id se trata do campo `documentId` na response) - Para atualizar registros específicos
 - **DELETE**: `http://localhost:1337/api/estados/:id` (o id se trata do campo `documentId` na response) - Para deletar registros específicos
 
@@ -236,5 +237,3 @@ As rotas para acessar os recursos são as seguintes:
   },
   "meta": {}
 }
-```
-```
