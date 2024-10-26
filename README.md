@@ -1,4 +1,4 @@
-```markdown
+````markdown
 # 🚀 Começando com Strapi
 
 Strapi vem com uma interface de linha de comando (CLI) completa, que permite criar e gerenciar seu projeto em segundos. Confira a documentação da CLI [aqui](https://docs.strapi.io/dev-docs/cli).
@@ -8,19 +8,16 @@ Strapi vem com uma interface de linha de comando (CLI) completa, que permite cri
 Inicie sua aplicação Strapi com autoReload habilitado. [Saiba mais](https://docs.strapi.io/dev-docs/cli#strapi-develop)
 
 ```bash
-npm run develop
-# ou
 yarn develop
 ```
+````
 
 ### `start`
 
 Inicie sua aplicação Strapi com autoReload desabilitado. [Saiba mais](https://docs.strapi.io/dev-docs/cli#strapi-start)
 
 ```bash
-npm run start
-# ou
-yarn start
+yarn start strapi
 ```
 
 ### `build`
@@ -28,8 +25,6 @@ yarn start
 Construa seu painel de administração. [Saiba mais](https://docs.strapi.io/dev-docs/cli#strapi-build)
 
 ```bash
-npm run build
-# ou
 yarn build
 ```
 
@@ -113,12 +108,18 @@ Para rodar a aplicação localmente na sua máquina, siga os passos abaixo:
    ```
 3. Construa e inicie os contêineres:
    ```bash
-   docker-compose up -d
+   construir: docker-compose up -d
+   iniciar: docker-compose up
    ```
 4. Acesse o painel administrativo do Strapi:
-   - Acesse [http://localhost:1337/admin](http://localhost:1337/admin) e faça login com as credenciais fornecidas.
+
+   - Acesse (http://localhost:1337/admin) e faça login com as credenciais fornecidas:
+
+   - **Email:** admin@teste.com
+   - **Senha:** Senha123
 
 Para parar os contêineres, use:
+
 ```bash
 docker-compose down
 ```
@@ -128,14 +129,17 @@ docker-compose down
 Este projeto backend foi desenvolvido utilizando o Strapi V5 e possui os seguintes recursos:
 
 1. **Modelos Criados**:
+
    - **Estado**: Representa as unidades federativas do país.
    - **Cidade**: Representa as cidades, associadas a seus respectivos estados.
    - **Pessoa**: Representa os indivíduos, que podem estar associados a cidades.
 
 2. **Configuração dos Modelos**:
+
    - Os modelos foram configurados para atender às regras do formulário, garantindo a integridade dos dados e a correta relação entre os diferentes modelos.
 
 3. **Restrições de Deleção**:
+
    - **Cidade**: Não pode ser removida se houver uma pessoa associada a ela, evitando a perda de informações referenciadas.
    - **Estado**: Não pode ser removido se houver uma cidade associada a ele, garantindo que as hierarquias de localização sejam mantidas.
 
@@ -163,7 +167,9 @@ As rotas para acessar os recursos são as seguintes:
 ### **Exemplos de Requisição e Resposta**
 
 #### **Criar Estado**
+
 **Requisição**
+
 ```json
 {
   "data": {
@@ -171,7 +177,9 @@ As rotas para acessar os recursos são as seguintes:
   }
 }
 ```
+
 **Resposta**
+
 ```json
 {
   "data": {
@@ -187,7 +195,9 @@ As rotas para acessar os recursos são as seguintes:
 ```
 
 #### **Criar Cidade**
+
 **Requisição**
+
 ```json
 {
   "data": {
@@ -196,7 +206,9 @@ As rotas para acessar os recursos são as seguintes:
   }
 }
 ```
+
 **Resposta**
+
 ```json
 {
   "data": {
@@ -212,7 +224,9 @@ As rotas para acessar os recursos são as seguintes:
 ```
 
 #### **Criar Pessoa**
+
 **Requisição**
+
 ```json
 {
   "data": {
@@ -223,7 +237,9 @@ As rotas para acessar os recursos são as seguintes:
   }
 }
 ```
+
 **Resposta**
+
 ```json
 {
   "data": {
@@ -237,3 +253,4 @@ As rotas para acessar os recursos são as seguintes:
   },
   "meta": {}
 }
+```
