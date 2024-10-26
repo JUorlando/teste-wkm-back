@@ -1,5 +1,3 @@
-Aqui está a atualização do README com as informações detalhadas sobre o uso das rotas e exemplos para Insomnia/Postman:
-
 ```markdown
 # 🚀 Começando com Strapi
 
